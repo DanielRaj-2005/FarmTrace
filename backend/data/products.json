@@ -1,0 +1,159 @@
+[
+  {
+    "product_id": "MANGO-2026-001",
+    "product_name": "Alphonso Mango",
+    "batch_id": "MANGO-BATCH-001",
+    "harvest_date": "2026-09-28",
+    "farmer_name": "Ramesh Kumar",
+    "farm_name": "Green Valley Farm",
+    "farm_location": "Krishnagiri, Tamil Nadu",
+    "transporter_name": "Tamil Fresh Logistics",
+    "vehicle_id": "TN-38-AB-4521",
+    "dispatch_date": null,
+    "device_id": "esp32-node-01",
+    "created_at": "2026-09-29T14:16:38.198Z",
+    "timeline": [
+      {
+        "event_id": "fe5d9b13-a02f-4aab-a5ab-16e048b7b4dd",
+        "stage": "harvested",
+        "happened_at": "2026-09-28T00:00:00.000Z",
+        "participant": "Ramesh Kumar",
+        "location": "Krishnagiri, Tamil Nadu"
+      },
+      {
+        "event_id": "stage-dispatch-01",
+        "stage": "dispatched",
+        "happened_at": "2026-09-29T14:16:38.219Z",
+        "participant": "Tamil Fresh Logistics",
+        "location": "Farm gate"
+      },
+      {
+        "event_id": "stage-transit-01",
+        "stage": "in_transit",
+        "happened_at": "2026-09-29T14:16:38.225Z",
+        "participant": "Tamil Fresh Logistics",
+        "location": "Highway 7"
+      },
+      {
+        "event_id": "stage-storage-01",
+        "stage": "received_at_storage",
+        "happened_at": "2026-09-29T14:16:38.231Z",
+        "participant": "Cold Store",
+        "location": "Hub Storage"
+      },
+      {
+        "event_id": "stage-delivered-01",
+        "stage": "delivered",
+        "happened_at": "2026-09-29T14:16:38.236Z",
+        "participant": "Retailer",
+        "location": "Retail Outlet"
+      }
+    ]
+  },
+  {
+    "product_id": "TOMATO-2026-001",
+    "product_name": "Tomato",
+    "batch_id": "TOMATO-BATCH-001",
+    "harvest_date": "2026-09-28",
+    "farmer_name": "Suresh Kumar",
+    "farm_name": "Red Valley Farm",
+    "farm_location": "Krishnagiri, Tamil Nadu",
+    "transporter_name": "Tamil Fresh Logistics",
+    "vehicle_id": "TN-38-CD-6789",
+    "dispatch_date": null,
+    "device_id": "esp32-node-02",
+    "warehouse_name": "Cold Store",
+    "retailer_name": "Retailer",
+    "created_at": "2026-09-29T14:20:00.000Z",
+    "timeline": [
+      {
+        "event_id": "tomato-stage-harvest-01",
+        "stage": "harvested",
+        "happened_at": "2026-09-28T01:00:00.000Z",
+        "participant": "Suresh Kumar",
+        "location": "Red Valley Farm"
+      },
+      {
+        "event_id": "tomato-stage-dispatch-01",
+        "stage": "dispatched",
+        "happened_at": "2026-09-28T02:00:00.000Z",
+        "participant": "Tamil Fresh Logistics",
+        "location": "Farm gate"
+      },
+      {
+        "event_id": "tomato-stage-transit-01",
+        "stage": "in_transit",
+        "happened_at": "2026-09-28T03:00:00.000Z",
+        "participant": "Tamil Fresh Logistics",
+        "location": "Highway 7"
+      },
+      {
+        "event_id": "tomato-stage-storage-01",
+        "stage": "received_at_storage",
+        "happened_at": "2026-09-28T04:00:00.000Z",
+        "participant": "Cold Store",
+        "location": "Hub Storage"
+      },
+      {
+        "event_id": "tomato-stage-delivered-01",
+        "stage": "delivered",
+        "happened_at": "2026-09-28T05:00:00.000Z",
+        "participant": "Retailer",
+        "location": "Retail Outlet"
+      }
+    ]
+  },
+  {
+    "product_id": "TOMATO-2026-002",
+    "product_name": "Tomato",
+    "batch_id": "TOMATO-BATCH-002",
+    "harvest_date": "2026-09-29",
+    "farmer_name": "Ramesh Kumar",
+    "farm_name": "Green Valley Farm",
+    "farm_location": "Krishnagiri, Tamil Nadu",
+    "transporter_name": "Tamil Fresh Logistics",
+    "vehicle_id": "TN-38-CD-6789",
+    "dispatch_date": null,
+    "device_id": "esp32-node-03",
+    "warehouse_name": "Cold Store",
+    "retailer_name": "Retailer",
+    "created_at": "2026-09-29T15:00:00.000Z",
+    "timeline": [
+      {
+        "event_id": "tomato-ramesh-stage-harvest-01",
+        "stage": "harvested",
+        "happened_at": "2026-09-29T01:00:00.000Z",
+        "participant": "Ramesh Kumar",
+        "location": "Green Valley Farm"
+      },
+      {
+        "event_id": "tomato-ramesh-transporter-dispatch-demo-01",
+        "stage": "dispatched",
+        "happened_at": "2026-09-29T18:22:55.131Z",
+        "participant": "Tamil Fresh Logistics",
+        "location": "Krishnagiri, Tamil Nadu"
+      },
+      {
+        "event_id": "tomato-ramesh-transporter-transit-demo-01",
+        "stage": "in_transit",
+        "happened_at": "2026-09-29T18:23:08.028Z",
+        "participant": "Tamil Fresh Logistics",
+        "location": "Krishnagiri, Tamil Nadu"
+      },
+      {
+        "event_id": "tomato-ramesh-warehouse-receive-demo-01",
+        "stage": "received_at_storage",
+        "happened_at": "2026-09-29T18:32:40.491Z",
+        "participant": "Cold Store",
+        "location": "Krishnagiri, Tamil Nadu"
+      },
+      {
+        "event_id": "tomato-ramesh-retailer-delivery-demo-01",
+        "stage": "delivered",
+        "happened_at": "2026-09-29T18:32:56.736Z",
+        "participant": "Retailer",
+        "location": "Krishnagiri, Tamil Nadu"
+      }
+    ]
+  }
+]
