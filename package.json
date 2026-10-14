@@ -1,0 +1,20 @@
+{
+  "name": "farm2fork-node",
+  "version": "1.0.0",
+  "description": "Farm-to-Fork IoT traceability backend: receives ESP32 sensor data, hash-chains and encrypts it, stores it (local file or cloud), and serves a dashboard.",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node backend/server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "aedes": "^1.2.0",
+    "aws-sdk": "^2.1693.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mqtt": "^5.16.0",
+    "qrcode": "^1.5.4"
+  }
+}

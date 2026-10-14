@@ -1,0 +1,7 @@
+.env
+node_modules/
+backend/data/device.key
+
+# Optional local runtime artifacts
+backend/data/*.tmp
+backend/data/ledger.json.backup
