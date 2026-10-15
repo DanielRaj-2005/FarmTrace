@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Farm-to-Fork Node Monitor</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div>
+    <h1>Farm-to-Fork Node Monitor</h1>
+    <div class="sub">Cold-chain monitoring from your IoT node, encrypted and protected by a tamper-evident hash chain.</div>
+  </div>
+  <div class="status"><span class="dot" id="netDot"></span><span id="netLabel">Connecting to server…</span></div>
+</header>
+
+<div class="wrap">
+  <div class="rolebar panel">
+    <label class="role-label">Role
+      <select id="roleSelect">
+        <option value="Farmer">Farmer</option>
+        <option value="Transporter">Transporter</option>
+        <option value="Warehouse">Warehouse</option>
+        <option value="Retailer">Retailer</option>
+        <option value="Admin">Admin</option>
+        <option value="Customer">Customer</option>
+      </select>
+    </label>
+    <div class="role-auth" id="roleAuthControls" hidden>
+      <label>Passphrase<input id="rolePassword" type="password" autocomplete="current-password"></label>
+      <button id="roleLoginBtn" type="button">Sign in</button>
+      <span id="roleAuthStatus" role="status"></span>
+    </div>
+  </div>
+
+  <section id="farmerView" class="role-section panel"></section>
+  <section id="transporterView" class="role-section panel"></section>
+  <section id="warehouseView" class="role-section panel"></section>
+  <section id="retailerView" class="role-section panel"></section>
+  <section id="adminView" class="role-section panel"></section>
+  <section id="customerView" class="role-section panel"></section>
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/dashboard.js?v=server-access-policy-1"></script>
+</body>
+</html>
